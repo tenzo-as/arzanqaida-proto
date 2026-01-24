@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.6.0
 // - protoc             v6.33.4
-// source: arzanqaida.proto
+// source: arzanqaida/arzanqaida.proto
 
-package authbackendv1
+package arzanqaidav1
 
 import (
 	context "context"
@@ -203,5 +203,5 @@ var Auth_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "arzanqaida.proto",
+	Metadata: "arzanqaida/arzanqaida.proto",
 }

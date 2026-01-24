@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v6.33.4
-// source: arzanqaida.proto
+// source: arzanqaida/arzanqaida.proto
 
-package authbackendv1
+package arzanqaidav1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -31,7 +31,7 @@ type RegisterRequest struct {
 
 func (x *RegisterRequest) Reset() {
 	*x = RegisterRequest{}
-	mi := &file_arzanqaida_proto_msgTypes[0]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -43,7 +43,7 @@ func (x *RegisterRequest) String() string {
 func (*RegisterRequest) ProtoMessage() {}
 
 func (x *RegisterRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_arzanqaida_proto_msgTypes[0]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -56,7 +56,7 @@ func (x *RegisterRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RegisterRequest.ProtoReflect.Descriptor instead.
 func (*RegisterRequest) Descriptor() ([]byte, []int) {
-	return file_arzanqaida_proto_rawDescGZIP(), []int{0}
+	return file_arzanqaida_arzanqaida_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *RegisterRequest) GetEmail() string {
@@ -82,7 +82,7 @@ type RegisterResponse struct {
 
 func (x *RegisterResponse) Reset() {
 	*x = RegisterResponse{}
-	mi := &file_arzanqaida_proto_msgTypes[1]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -94,7 +94,7 @@ func (x *RegisterResponse) String() string {
 func (*RegisterResponse) ProtoMessage() {}
 
 func (x *RegisterResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_arzanqaida_proto_msgTypes[1]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -107,7 +107,7 @@ func (x *RegisterResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RegisterResponse.ProtoReflect.Descriptor instead.
 func (*RegisterResponse) Descriptor() ([]byte, []int) {
-	return file_arzanqaida_proto_rawDescGZIP(), []int{1}
+	return file_arzanqaida_arzanqaida_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *RegisterResponse) GetUserId() int64 {
@@ -127,7 +127,7 @@ type LoginRequest struct {
 
 func (x *LoginRequest) Reset() {
 	*x = LoginRequest{}
-	mi := &file_arzanqaida_proto_msgTypes[2]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -139,7 +139,7 @@ func (x *LoginRequest) String() string {
 func (*LoginRequest) ProtoMessage() {}
 
 func (x *LoginRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_arzanqaida_proto_msgTypes[2]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -152,7 +152,7 @@ func (x *LoginRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LoginRequest.ProtoReflect.Descriptor instead.
 func (*LoginRequest) Descriptor() ([]byte, []int) {
-	return file_arzanqaida_proto_rawDescGZIP(), []int{2}
+	return file_arzanqaida_arzanqaida_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *LoginRequest) GetEmail() string {
@@ -178,7 +178,7 @@ type LoginResponse struct {
 
 func (x *LoginResponse) Reset() {
 	*x = LoginResponse{}
-	mi := &file_arzanqaida_proto_msgTypes[3]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -190,7 +190,7 @@ func (x *LoginResponse) String() string {
 func (*LoginResponse) ProtoMessage() {}
 
 func (x *LoginResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_arzanqaida_proto_msgTypes[3]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -203,7 +203,7 @@ func (x *LoginResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LoginResponse.ProtoReflect.Descriptor instead.
 func (*LoginResponse) Descriptor() ([]byte, []int) {
-	return file_arzanqaida_proto_rawDescGZIP(), []int{3}
+	return file_arzanqaida_arzanqaida_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *LoginResponse) GetToken() string {
@@ -222,7 +222,7 @@ type IsAdminRequest struct {
 
 func (x *IsAdminRequest) Reset() {
 	*x = IsAdminRequest{}
-	mi := &file_arzanqaida_proto_msgTypes[4]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -234,7 +234,7 @@ func (x *IsAdminRequest) String() string {
 func (*IsAdminRequest) ProtoMessage() {}
 
 func (x *IsAdminRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_arzanqaida_proto_msgTypes[4]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -247,7 +247,7 @@ func (x *IsAdminRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IsAdminRequest.ProtoReflect.Descriptor instead.
 func (*IsAdminRequest) Descriptor() ([]byte, []int) {
-	return file_arzanqaida_proto_rawDescGZIP(), []int{4}
+	return file_arzanqaida_arzanqaida_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *IsAdminRequest) GetUserId() int64 {
@@ -266,7 +266,7 @@ type IsAdminResponse struct {
 
 func (x *IsAdminResponse) Reset() {
 	*x = IsAdminResponse{}
-	mi := &file_arzanqaida_proto_msgTypes[5]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -278,7 +278,7 @@ func (x *IsAdminResponse) String() string {
 func (*IsAdminResponse) ProtoMessage() {}
 
 func (x *IsAdminResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_arzanqaida_proto_msgTypes[5]
+	mi := &file_arzanqaida_arzanqaida_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -291,7 +291,7 @@ func (x *IsAdminResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IsAdminResponse.ProtoReflect.Descriptor instead.
 func (*IsAdminResponse) Descriptor() ([]byte, []int) {
-	return file_arzanqaida_proto_rawDescGZIP(), []int{5}
+	return file_arzanqaida_arzanqaida_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *IsAdminResponse) GetIsAdmin() bool {
@@ -301,11 +301,11 @@ func (x *IsAdminResponse) GetIsAdmin() bool {
 	return false
 }
 
-var File_arzanqaida_proto protoreflect.FileDescriptor
+var File_arzanqaida_arzanqaida_proto protoreflect.FileDescriptor
 
-const file_arzanqaida_proto_rawDesc = "" +
+const file_arzanqaida_arzanqaida_proto_rawDesc = "" +
 	"\n" +
-	"\x10arzanqaida.proto\x12\x04auth\"C\n" +
+	"\x1barzanqaida/arzanqaida.proto\x12\x04auth\"C\n" +
 	"\x0fRegisterRequest\x12\x14\n" +
 	"\x05email\x18\x01 \x01(\tR\x05email\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\"+\n" +
@@ -323,22 +323,22 @@ const file_arzanqaida_proto_rawDesc = "" +
 	"\x04Auth\x129\n" +
 	"\bRegister\x12\x15.auth.RegisterRequest\x1a\x16.auth.RegisterResponse\x120\n" +
 	"\x05Login\x12\x12.auth.LoginRequest\x1a\x13.auth.LoginResponse\x126\n" +
-	"\aIsAdmin\x12\x14.auth.IsAdminRequest\x1a\x15.auth.IsAdminResponseB(Z&tenzo_as.auth-backend.v1;authbackendv1b\x06proto3"
+	"\aIsAdmin\x12\x14.auth.IsAdminRequest\x1a\x15.auth.IsAdminResponseB%Z#tenzo_as.arzanqaida.v1;arzanqaidav1b\x06proto3"
 
 var (
-	file_arzanqaida_proto_rawDescOnce sync.Once
-	file_arzanqaida_proto_rawDescData []byte
+	file_arzanqaida_arzanqaida_proto_rawDescOnce sync.Once
+	file_arzanqaida_arzanqaida_proto_rawDescData []byte
 )
 
-func file_arzanqaida_proto_rawDescGZIP() []byte {
-	file_arzanqaida_proto_rawDescOnce.Do(func() {
-		file_arzanqaida_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_arzanqaida_proto_rawDesc), len(file_arzanqaida_proto_rawDesc)))
+func file_arzanqaida_arzanqaida_proto_rawDescGZIP() []byte {
+	file_arzanqaida_arzanqaida_proto_rawDescOnce.Do(func() {
+		file_arzanqaida_arzanqaida_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_arzanqaida_arzanqaida_proto_rawDesc), len(file_arzanqaida_arzanqaida_proto_rawDesc)))
 	})
-	return file_arzanqaida_proto_rawDescData
+	return file_arzanqaida_arzanqaida_proto_rawDescData
 }
 
-var file_arzanqaida_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
-var file_arzanqaida_proto_goTypes = []any{
+var file_arzanqaida_arzanqaida_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_arzanqaida_arzanqaida_proto_goTypes = []any{
 	(*RegisterRequest)(nil),  // 0: auth.RegisterRequest
 	(*RegisterResponse)(nil), // 1: auth.RegisterResponse
 	(*LoginRequest)(nil),     // 2: auth.LoginRequest
@@ -346,7 +346,7 @@ var file_arzanqaida_proto_goTypes = []any{
 	(*IsAdminRequest)(nil),   // 4: auth.IsAdminRequest
 	(*IsAdminResponse)(nil),  // 5: auth.IsAdminResponse
 }
-var file_arzanqaida_proto_depIdxs = []int32{
+var file_arzanqaida_arzanqaida_proto_depIdxs = []int32{
 	0, // 0: auth.Auth.Register:input_type -> auth.RegisterRequest
 	2, // 1: auth.Auth.Login:input_type -> auth.LoginRequest
 	4, // 2: auth.Auth.IsAdmin:input_type -> auth.IsAdminRequest
@@ -360,26 +360,26 @@ var file_arzanqaida_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_arzanqaida_proto_init() }
-func file_arzanqaida_proto_init() {
-	if File_arzanqaida_proto != nil {
+func init() { file_arzanqaida_arzanqaida_proto_init() }
+func file_arzanqaida_arzanqaida_proto_init() {
+	if File_arzanqaida_arzanqaida_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_arzanqaida_proto_rawDesc), len(file_arzanqaida_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_arzanqaida_arzanqaida_proto_rawDesc), len(file_arzanqaida_arzanqaida_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_arzanqaida_proto_goTypes,
-		DependencyIndexes: file_arzanqaida_proto_depIdxs,
-		MessageInfos:      file_arzanqaida_proto_msgTypes,
+		GoTypes:           file_arzanqaida_arzanqaida_proto_goTypes,
+		DependencyIndexes: file_arzanqaida_arzanqaida_proto_depIdxs,
+		MessageInfos:      file_arzanqaida_arzanqaida_proto_msgTypes,
 	}.Build()
-	File_arzanqaida_proto = out.File
-	file_arzanqaida_proto_goTypes = nil
-	file_arzanqaida_proto_depIdxs = nil
+	File_arzanqaida_arzanqaida_proto = out.File
+	file_arzanqaida_arzanqaida_proto_goTypes = nil
+	file_arzanqaida_arzanqaida_proto_depIdxs = nil
 }
