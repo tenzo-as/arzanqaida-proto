@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package auth;
+
+option go_package = "tenzo_as.arzanqaida.v1;arzanqaidav1";
+
+// Auth service provides user authentication and authorization operations.
+service Auth {
+    // Register creates a new user account.
+    rpc Register (RegisterRequest) returns (RegisterResponse);
+    // Login authenticates a user and returns a token.
+    rpc Login (LoginRequest) returns (LoginResponse);
+    // IsAdmin checks if a user has admin privileges.
+    rpc IsAdmin (IsAdminRequest) returns (IsAdminResponse);
+}
+
+message RegisterRequest {
+    string email = 1;
+    string password = 2;
+}
+
+message RegisterResponse {
+    int64 user_id = 1;
+}
+
+message LoginRequest {
+    string email = 1;
+    string password = 2;
+}
+
+message LoginResponse {
+    string token = 1;
+}
+
+message IsAdminRequest {
+    int64 user_id = 1;
+}
+
+message IsAdminResponse {
+    bool is_admin = 1;
+}
+
