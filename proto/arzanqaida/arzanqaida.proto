@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "tenzo_as.arzanqaida.v1;arzanqaidav1";
+option go_package = "tenzo-as.arzanqaida.v1;arzanqaidav1";
 
 // Auth service provides user authentication and authorization operations.
 service Auth {
